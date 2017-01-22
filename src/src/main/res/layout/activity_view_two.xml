@@ -1,0 +1,49 @@
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_height="match_parent"
+android:layout_width="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:paddingBottom="8dp"
+    android:background="#0097A7"
+    android:id="@+id/topPanel">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Back On Track: View Mode"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"/>
+
+
+</RelativeLayout>
+
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="80dp"
+    android:src="@drawable/road"/>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:layout_below="@+id/topPanel"
+    tools:context="com.example.austin.backontrack.ViewTwo" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/viewmode"
+        android:layout_below="@id/topPanel"/>
+
+</RelativeLayout>

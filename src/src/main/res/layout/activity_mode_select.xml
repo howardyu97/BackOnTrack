@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:background="#FFFFFF"
+        tools:context="com.example.austin.backontrack.HomeScreen">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:paddingBottom="8dp"
+            android:background="#0097A7"
+            android:id="@+id/topPanel">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="Back On Track"
+                android:textSize="40sp"
+                android:textColor="#FFFFFF"/>
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/road"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topPanel"
+            android:text="Welcome! Please select a mode."
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:paddingTop="40dp"
+            android:paddingBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/selectprompt"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectprompt"
+            android:id="@+id/zonebutton"
+            android:layout_margin="20dp"
+            android:padding="25dp"
+            android:layout_centerHorizontal="true"
+            android:text="Zone Mode"
+            android:textSize="25dp"
+            android:onClick="openZoneTwo"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zonebutton"
+            android:id="@+id/pathbutton"
+            android:layout_margin="20dp"
+            android:padding="25dp"
+            android:layout_centerHorizontal="true"
+            android:text="Path Mode"
+            android:textSize="25dp"
+            android:onClick="openPathTwo"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pathbutton"
+            android:id="@+id/viewbutton"
+            android:layout_margin="20dp"
+            android:padding="25dp"
+            android:layout_centerHorizontal="true"
+            android:text="View Map"
+            android:textSize="25dp"
+            android:onClick="openViewTwo"/>
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
